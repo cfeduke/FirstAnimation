@@ -54,9 +54,9 @@
 //START:code.BaseView.move
 - (void)move { // <label id="code.BaseView.move"/>
   if(isRight) {
-    [mover setFrame:leftFramePosition];
+    [[mover animator] setFrame:leftFramePosition];
   } else {
-    [mover setFrame:rightFramePosition];
+    [[mover animator] setFrame:rightFramePosition];
   }
 	isRight = !isRight;
 }
